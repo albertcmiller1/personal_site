@@ -4,7 +4,7 @@ import { Routes, Route} from 'react-router-dom';
 
 import Navigation     from './components/Navbar'
 import HomePage       from './pages/HomePage';
-import ResumePage     from './pages/ResumePage';
+import ExperiencePage     from './pages/ResumePage';
 import ProjectsPage   from './pages/ProjectsPage';
 import BlogPage       from './pages/BlogPage';
 import ContactPage    from './pages/ContactPage';
@@ -17,7 +17,7 @@ const App = () => {
       <Routes>
         <Route index            element={<HomePage/>}/>
         <Route path="/home"     element={<HomePage/>}/>
-        <Route path="/resume"   element={<ResumePage/>}/>
+        <Route path="/experience"   element={<ExperiencePage/>}/>
         <Route path="/projects" element={<ProjectsPage/>}/>
         <Route path="/blog"     element={<BlogPage/>}/>
         <Route path="/contact"  element={<ContactPage/>}/>
