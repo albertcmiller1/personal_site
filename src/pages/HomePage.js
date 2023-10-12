@@ -8,8 +8,7 @@ const HomePage = () => {
             </h1>
             <div>
                 My name is Albert Miller and i'm a Senior Associate Sotware Engineer at Capital One. 
-                I was rasied in Norman, Oklahoma where I graduated at the top of my class at Norman North High School. 
-                My family is composed of primarily bankers and sotware engineers, so it was fitting my career led me to financial software. 
+                I was rasied in Norman, Oklahoma with a family primarily composed of bankers and sotware engineers, so it was fitting my career led me to financial software. 
                 In college I studied Mechanical Engineering at the University of Texas at Austin, with a minor in business administration. 
                 In my junior year, I took my first coding class in MATLAB. 
                 I immidiatly fell in love with coding and knew this was what I wanted to do as a career. 
