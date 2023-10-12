@@ -4,7 +4,7 @@ import { Routes, Route} from 'react-router-dom';
 
 import Navigation     from './components/Navbar'
 import HomePage       from './pages/HomePage';
-import ExperiencePage     from './pages/ResumePage';
+import ExperiencePage from './pages/ResumePage';
 import ProjectsPage   from './pages/ProjectsPage';
 import BlogPage       from './pages/BlogPage';
 import ContactPage    from './pages/ContactPage';
@@ -15,13 +15,13 @@ const App = () => {
     <div>
       <Navigation/>
       <Routes>
-        <Route index            element={<HomePage/>}/>
-        <Route path="/home"     element={<HomePage/>}/>
+        <Route index                element={<HomePage/>}/>
+        <Route path="/home"         element={<HomePage/>}/>
         <Route path="/experience"   element={<ExperiencePage/>}/>
-        <Route path="/projects" element={<ProjectsPage/>}/>
-        <Route path="/blog"     element={<BlogPage/>}/>
-        <Route path="/contact"  element={<ContactPage/>}/>
-        <Route path="*"         element={<NotFoundPage/>}/>
+        <Route path="/projects"     element={<ProjectsPage/>}/>
+        <Route path="/blog"         element={<BlogPage/>}/>
+        <Route path="/contact"      element={<ContactPage/>}/>
+        <Route path="*"             element={<NotFoundPage/>}/>
       </Routes>
     </div>
   );

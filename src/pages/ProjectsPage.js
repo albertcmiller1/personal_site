@@ -6,21 +6,21 @@ const ProjectsPage = () => {
             <h1>
                 Personal Projects 
             </h1>
-            <h3>
+            <h2>
                 Financial Exchange 
-            </h3>
+            </h2>
             <div>
                 cool stuff
             </div>
-            <h3>
+            <h2>
                 Brokerage
-            </h3>
+            </h2>
             <div>
                 cool stuff
             </div>
-            <h3>
+            <h2>
                 Gravity
-            </h3>
+            </h2>
             <div>
                 cool stuff
             </div>

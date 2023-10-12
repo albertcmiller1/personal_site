@@ -1,5 +1,22 @@
 import React from "react";
  
+// Function will execute on click of button 
+const onButtonClick = () => { 
+    // using Java Script method to get PDF file 
+    fetch('https://raw.githubusercontent.com/albertcmiller1/personal_site/main/README.md').then(response => { 
+        response.blob().then(blob => { 
+            // Creating new object of PDF file 
+            const fileURL = window.URL.createObjectURL(blob); 
+            // Setting various property values 
+            let alink = document.createElement('a'); 
+            alink.href = fileURL; 
+            alink.download = 'SamplePDF.pdf'; 
+            alink.click(); 
+        }) 
+    }) 
+} 
+
+
 const HomePage = () => {
     return (
         <div>
@@ -20,6 +37,13 @@ const HomePage = () => {
                 My second and current role is Data focused. I work on an end of day batch team critical to Capital One's in house financial core. 
                 This has givin me the opportunity to learn about Python, Scala, Spark, event driven cloud architecture, and application performance optimizations on cloud servers. 
             </div>
+            <center> 
+                <h1>Welcome to Geeks for Geeks</h1> 
+                <h3>Click on below button to download PDF file</h3> 
+                <button onClick={onButtonClick}> 
+                    Download PDF 
+                </button> 
+            </center> 
         </div>
     );
 };
